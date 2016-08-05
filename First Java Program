@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class MyClass {
+	static Scanner myVar = new Scanner(System.in);
+	
+  public static void main(String[ ] args) {
+    System.out.println("What is your first name?");
+	String firstName = myVar.next();
+    System.out.println(firstName + " is a very nice name!");
+    System.out.println("a*(x^2) + b*x + c = 0");
+    System.out.println("Enter the value for a = ");
+    Double a = myVar.nextDouble();
+    System.out.println("Enter the value for b = ");
+    Double b = myVar.nextDouble();
+    System.out.println("Enter the value for c = ");
+    Double c = myVar.nextDouble();
+    Double zero1 = (-b + Math.sqrt(b*b - 4*a*c))/(2*a);
+    Double zero2 = (-b - Math.sqrt(b*b - 4*a*c))/(2*a);
+    System.out.println("x = " + zero1 + " and " + zero2);
+  }
+}
+//used a scanner! uses the quadratic formula!
